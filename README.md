@@ -5,7 +5,7 @@
 - Different camera can be used
 
 # Getting Started
-- This program let you to display and record the video.
+- This program let you to display and record the video using the camera that already connected to your computer. 
 
 ## Prerequisites
     Python, Opencv
@@ -21,4 +21,13 @@
         ->python camera_360_record.py
 
 ## Record
-- Recorded video file is saved in "VIDEO_RECORDS" folder.
+- Recorded video file is saved into "VIDEO_RECORDS" folder.
+
+# Notes
+- If you want to use your laptop webcam change the capture index to O as below 
+  
+        capture = cv2.VideoCapture(1) =====>  capture = cv2.VideoCapture(0)
+  
+- Camera Resolution can be set by changing the value of WIDTH and HEIGHT as below
+
+        WIDTH = 1920 HEIGHT = 1080    =====>  WIDTH = 640   HEIGHT = 480
